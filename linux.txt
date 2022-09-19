@@ -1,0 +1,114 @@
+// profil: linux@linux 
+
+commandok:
+
+---
+1.feladat 
+---
+
+pwd
+mkdir a1
+mkdir a2
+mkdir a3
+cd a1
+mkdir all
+cd ..
+cd a2
+mkdir a21
+mkdir a22
+1s
+
+-----------
+
+---
+2.feladat (irassa ki a user nevet)
+---
+whoami
+
+---
+3.feladat
+---
+cd /home/linux
+pwd
+
+---
+4. feladat
+---
+
+ls -i
+
+---
+5.feladat
+---
+cp a1/megoldad a2/a21/megoldas_a21
+
+---
+6.feladat
+---
+od -b megoldas
+
+
+// profil: root@linux
+7. feladat
+runlevel
+
+8.feladat
+root@linux:/bin# (//ha nem /bin -be vagy akkor cd /bin) 
+ls -s date datum
+
+
+9.feladat
+root@linux:/home/linux/a2/a21 (ha nem ebbe lennel akkor CD)
+add user beszamolo
+<megadsz jelszot> es csá
+enter 5x + Y (ha kérdezi)
+
+10.feladat
+??? idk nincs meg
+
+
+11.
+root@linux:/home/linux/a1 (ha nem vagy benne akkor cd)
+./menu
+1 [enter]
+2 [enter]
+3 [enter]
+
+nano editor script (mar nem emlékszem melyik directoryba kell)
+function lista() {
+echo "A könyvtár tartalma: "
+ls
+varakozik
+}
+function felhasznalok()
+{
+echo "Felhasználók"
+who
+varakozik
+}
+fuction kilep(){
+exit
+}
+function varakozik() {
+echo
+echo -e "A folytatáshoz nyomjon entert"
+read n
+}
+menu=0
+while test $menu -ne 3
+do
+menu=0
+echo "1. A felhasznalok listaja"
+echo "2. A könyvtár file-nak neve"
+echo "3. Kilépés"
+echo -n "Választás"
+read menu
+case $menu in
+1) felhasznalok;;
+2) lista;;
+3) kilep;;
+esac
+done
+
+
+
