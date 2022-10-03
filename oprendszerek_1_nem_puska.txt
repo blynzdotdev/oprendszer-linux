@@ -1,0 +1,80 @@
+1.)
+cd ../home
+mkdir proba
+cd proba
+mkdir p1
+mkdir p2
+mkdir p3
+
+2.)
+rmdir p3
+
+3.)
+cd p1
+cat >gyak.txt
+c c c
+aa aa
+b
+'ctrl'd
+
+4.)
+cat >.gyak1.txt  (rejtett file)
+ez
+egy
+rejtett
+állomány
+'ctrl'd  (lezárás)
+
+3.)
+cd  (lépkedés a mappák között)
+ls -R  (kilistázza a teljes mappaszerkezetet, átláthatatlan)
+
+4.)
+ls -ia  (kilistázza a mappa tartalmát inode-számokkal és rejtett file-okkal együtt)
+
+5.)
+date
+
+6.)
+who|sort
+cat >proba.txt
+(--az összes felhasználó, ami be van jelentkezve--)
+'ctrl'd
+
+7.)
+wc -l gyak.txt
+wc -c gyak.txt
+
+8.)
+more proba.txt  (kiírja a file tartalmát)
+pg proba.txt             -||-
+
+9.)
+(p1 mappában)
+cp proba.txt ../p2
+
+10.)
+(p2 mappában)
+mv proba.txt ..
+
+11.)
+man tar  (megmutatja a tar program használati utasítását)
+tar -c proba -f proba.tar  (létrehozza az archív file-t)
+rm -r proba  (törli a proba mappát és a tartalmát is)
+
+12.)
+tar -x proba -f proba.tar  (extractolja az archív file-t)
+
+13.)
+(p1 mappában)
+od -x gyak.txt  (kiírja a gyak.txt tartalmát hexadecimálisan)
+
+14.)
+(p1 mappában)
+grep rejtett .gyak1.txt
+
+15.)
+man tee  (a tee parancs leírásának kiírása)
+
+16.)
+NYELVTANKÖNYV LUXUS???
