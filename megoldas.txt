@@ -1,0 +1,49 @@
+1.)
+mkdir tothbence
+cd tothbence
+mkdir b1
+cd b1
+mkdir b11
+cd ..
+mkdir b2
+cd b2
+mkdir b21
+mkdir b22
+
+2.)
+who|cat >felhasznalo
+
+3.)
+pwd
+
+4.)
+ls -i
+
+5.)
+cp megoldas.txt b2/b21/megoldasb21.txt
+
+6.)
+od -h megoldas.txt
+
+7.)
+runlevel
+
+8.)
+ln -s date>dátum
+
+9.)
+adduser siker
+(pwd)  siker
+(pwd2) siker
+(a saját név mappában) chown siker b2/b21/megoldasb21.txt
+
+10.)
+addgroup vizsga
+
+11.)
+top
+
+12.)
+q
+
+13.)
